@@ -100,7 +100,7 @@ Task:
 */
 
 date = new Date()
-console.log("Day: "+date.getDate()+ "," +"  Month: " + date.getMonth() + ","+ " Year: " + date.getFullYear())
+console.log("Day: "+date.getDate()+ "," +"  Month: " + (date.getMonth()+1) + ","+ " Year: " + date.getFullYear())
 
 // ============================================================
 // TODO-5: ARRAY + SPREAD — find MIN and MAX from 10 numbers
@@ -111,6 +111,13 @@ Task:
 2) Use spread syntax with Math.min(...) and Math.max(...) to find extremes.
 3) Display both values.
 */
+
+const nums = [10, 2, 30, 3,69,0,1,-6,-61, -9999];
+const min = Math.min(...nums);  
+const max = Math.max(...nums);
+
+console.log("This is MAX: "+max)
+console.log("This is Min: "+min)
 
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
