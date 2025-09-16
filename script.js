@@ -85,6 +85,9 @@ Task:
 1) Create a String object or plain string.
 2) Use .charAt(index) and .length to output characters and size.
 */
+let string = "I wish this works :(";
+let index = 0;
+console.log("The value at index " + index+ ": "+"(" + (string.charAt(index))+")" + " The Size: " + string.length )
 
 // ===================================
 // TODO-4: DATE — day, month, and year
