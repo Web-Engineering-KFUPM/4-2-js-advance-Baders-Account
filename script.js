@@ -71,8 +71,10 @@ Task:
 1) Make an object used as a "map" (key → value), e.g., course codes → titles.
 2) Iterate over it with for...in and display each key and value.
 */
-const map =  {
-  
+const courseTitles = { A101: "Intro", A201: "Data Structures" };
+
+for (const key in courseTitles) {
+  console.log("Key: " + key+ "  Value: " +courseTitles[key] )
 }
 
 // =========================================
