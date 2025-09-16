@@ -21,7 +21,12 @@ Task:
 3) Add a setter updateGpa(newGpa) or use a set accessor for gpa that validates 0.0–4.0.
 4) Create an instance/object and output its attributes using the getter(s).
 */
- class Student {}
+ let Student =  {
+   firstName: "Bader",
+   lastName:"Almutairi",
+   GPA
+ };
+
 
 // ====================================
 // TODO-2: OBJECT AS MAP + for...in LOOP
