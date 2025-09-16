@@ -21,11 +21,46 @@ Task:
 3) Add a setter updateGpa(newGpa) or use a set accessor for gpa that validates 0.0–4.0.
 4) Create an instance/object and output its attributes using the getter(s).
 */
- let Student =  {
+ let student =  {
    firstName: "Bader",
    lastName:"Almutairi",
-   GPA
+   GPA: 4,
+
+  getFullName (){
+    return this.firstName + " " + this.lastName;
+  },
+
+
+
+  getGPA (){
+    return this.GPA;
+  },
+
+   updateGPA (newGPA){
+      if (newGPA >= 0 && newGPA <= 4) {
+      this.GPA = newGPA;
+    }
+    else{
+      console.log("Your Input is not valid");
+    }
+   }
  };
+
+ console.log(student.getFullName());
+ console.log("This is his GPA Before your change: "+(student.getGPA()));
+
+
+ let value=prompt("Enter his GPA:  ");
+
+ student.updateGPA(value);
+
+ console.log("This his GPA after your input: "+(student.getGPA()));
+ 
+
+
+ 
+
+
 
 
 // ====================================
@@ -36,6 +71,9 @@ Task:
 1) Make an object used as a "map" (key → value), e.g., course codes → titles.
 2) Iterate over it with for...in and display each key and value.
 */
+const map =  {
+  
+}
 
 // =========================================
 // TODO-3: STRING OBJECT — charAt() & length
