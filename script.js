@@ -130,23 +130,34 @@ Task:
    in each block so you can see the flow of control.
 */
 function maxElem(array){
-    if (!Array.isArray(arr) || arr.length === 0) {
-    throw new Error("Array must be non-empty.");
-  }
-  return arr[0];  //still not complete 
+    
+    //still not complete 
   
   try{
-     const x = firstItem([]); 
+     //const x = firstItem([]);
+     if (!Array.isArray(array) || array.length === 0) {
+    throw new Error("Array must be non-empty.");
+      }
+      else{
+        return "The maximum number in the array: "+ (Math.max(...array))
+      }
+     
   }
 
   catch (e){
-      console.log("You Entered an empty array")
+      //console.log("You Entered an empty array");
+      return e.message;
+    
   }
 
   finally{
-
+      console.log("End of the program")
   }
 }
+
+console.log(maxElem([1,2,3,4,5]));
+
+console.log(maxElem([])); // This will trigger the error handling
 
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
